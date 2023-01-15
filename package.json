@@ -5,8 +5,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "npm run db:up && npm run table:up && node index.js",
+    "start": "node index.js",
     "dev": "nodemon index.js",
+    "build": "npm run db:up && npm run table:up",
     "db:up": "node scripts/dbUp.js",
     "table:up": "node scripts/tableUp.js",
     "table:down": "node scripts/tableDown.js"
